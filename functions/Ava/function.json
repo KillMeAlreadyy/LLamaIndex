@@ -1,0 +1,18 @@
+{
+    "scriptFile": "DataIngestion.py",
+    "bindings": [
+        {
+            "authLevel": "function",
+            "type": "httpTrigger",
+            "direction": "in",
+            "name": "req",
+            "methods": ["get", "post"],
+            "route": "data_ingestion"
+        },
+        {
+            "type": "http",
+            "direction": "out",
+            "name": "$return"
+        }
+    ]
+}
